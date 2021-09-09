@@ -24,6 +24,7 @@ public class RequestAspect {
 
     /**
      * 切面定义
+     * 拦截所有的请求nacos配置接口，让其暂停一秒
      */
     @Pointcut("execution(* com.alibaba.csp.sentinel.dashboard..DynamicRuleProvider+.getRules(*))")
     public void executeService() {
